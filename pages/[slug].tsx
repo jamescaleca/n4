@@ -30,7 +30,7 @@ const Page: React.FC<PageProps> = ({ page, error }) => {
       {pageOk && (
         <>
           <Head>
-            <title>{page.meta.title}</title>
+            <title>N4 Enterprises</title>
             <meta name="description" content={page.meta.description} />
           </Head>
           <PageViewer page={pageOk} />
