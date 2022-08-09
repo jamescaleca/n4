@@ -9,22 +9,26 @@ const Header: React.FC = () => (
           <img
             src="/react-bricks-logo.svg"
             className="w-48"
-            alt="React Bricks"
+            alt="N4 Logo"
           />
           <div className="sm:ml-8 flex space-x-5 text-center">
             <Link href="/">
               <a className="text-gray-500 hover:text-pink-700">Home</a>
             </Link>
             <Link href="/about-us">
-              <a className="text-gray-500 hover:text-pink-700">About us</a>
+              <a className="text-gray-500 hover:text-pink-700">About</a>
+            </Link>
+            <Link href="/services">
+              <a className="text-gray-500 hover:text-pink-700">Services</a>
+            </Link>
+            <Link href="/insights">
+              <a className="text-gray-500 hover:text-pink-700">Insights</a>
+            </Link>
+            <Link href="/contact">
+              <a className="text-gray-500 hover:text-pink-700">Contact</a>
             </Link>
           </div>
         </div>
-        <Link href="/admin" prefetch={false}>
-          <a className="py-2 px-5 rounded text-white font-medium bg-cyan-500 hover:bg-cyan-600 hover:shadow-lg transition duration-200">
-            Edit content
-          </a>
-        </Link>
       </div>
     </div>
   </header>

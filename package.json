@@ -13,7 +13,9 @@
     "next": "^12.2.2",
     "react": "^18.2.0",
     "react-bricks": "^3.3.1",
-    "react-dom": "^18.2.0"
+    "react-bricks-ui": "^0.5.1",
+    "react-dom": "^18.2.0",
+    "react-slick": "^0.29.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.6",
