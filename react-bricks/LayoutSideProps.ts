@@ -16,6 +16,7 @@ export const BackgroundColorsSideEditProps: types.ISideEditProp = {
       bgColors.orange,
       bgColors.darkBlue,
       bgColors.dark,
+      bgColors.transparent,
     ],
   },
 }

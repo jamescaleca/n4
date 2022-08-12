@@ -7,6 +7,7 @@ export type TextColorName =
   | 'purple500'
 
 export type BgColorName =
+  | 'transparent'
   | 'white'
   | 'light'
   | 'gray'
@@ -86,6 +87,10 @@ export const bgColors: BgColors = {
   dark: {
     label: 'Dark',
     value: { color: '#111827', className: 'bg-gray-900 dark:bg-gray-900 dark' },
+  },
+  transparent: {
+    label: 'Transparent',
+    value: { color: '#00ffffff', className: 'bg-transparent'}
   },
 }
 

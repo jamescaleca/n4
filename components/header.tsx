@@ -1,36 +1,57 @@
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
+import Logo from '../public/images/Logo/Black/N4-Enterprises-Black.png'
+
 
 const Header: React.FC = () => (
-  <header className="bg-blue-900 sm:h-20 py-5 border-b sm:sticky top-0">
-    <div className="max-w-5xl mx-auto px-6">
-      <div className="w-full flex flex-col sm:flex-row justify-center sm:justify-between items-center">
-        <div className="flex flex-col sm:flex-row items-center mb-4 sm:mb-0">
-          <img
-            src="/react-bricks-logo.svg"
-            className="w-48"
-            alt="N4 Logo"
-          />
-          <div className="sm:ml-8 flex space-x-5 text-center">
-            <Link href="/">
-              <a className="text-gray-500 hover:text-pink-700">Home</a>
-            </Link>
-            <Link href="/about-us">
-              <a className="text-gray-500 hover:text-pink-700">About</a>
-            </Link>
-            <Link href="/services">
-              <a className="text-gray-500 hover:text-pink-700">Services</a>
-            </Link>
-            <Link href="/insights">
-              <a className="text-gray-500 hover:text-pink-700">Insights</a>
-            </Link>
-            <Link href="/contact">
-              <a className="text-gray-500 hover:text-pink-700">Contact</a>
-            </Link>
-          </div>
-        </div>
-      </div>
+  <header 
+    className="flex z-[9999] bg-transparent justify-around items-center text-center relative w-full mb-8 mt-5"
+  >
+    <div className="w-auto relative">
+      <a href="#top">
+        <Image
+          src="/images/Logo/Black/N4-Enterprises-Black.png"
+          alt="N4 Logo"
+          width={128}
+          height={77}
+        />
+      </a>
     </div>
+    <nav className="sm:ml-8 flex space-x-5 text-center">
+      <ul className="flex items-center text-right">
+        <li className="ml-3">
+          <Link href="/">
+            <a className="hover:text-blue-400 uppercase">Home</a>
+          </Link>
+        </li>
+        <li className="ml-3">
+          <Link href="/about-us">
+            <a className="hover:text-blue-400 uppercase">About</a>
+          </Link>
+        </li>
+        <li className="ml-3">
+          <Link href="/services">
+            <a className="hover:text-blue-400 uppercase">Services</a>
+          </Link>
+        </li>
+        <li className="ml-3">
+          <Link href="/insights">
+            <a className="hover:text-blue-400 uppercase">Insights</a>
+          </Link>
+        </li>
+        <li className="ml-3">
+          <Link href="/contact">
+            <a className="hover:text-blue-400 uppercase">Contact</a>
+          </Link>
+        </li>
+        <li className="ml-3">
+          <button className="bg-blue-600 p-3 rounded-full text-sm font-semibold text-center uppercase text-white">
+            Book now
+          </button>
+        </li>
+      </ul>
+    </nav>
   </header>
 )
 
