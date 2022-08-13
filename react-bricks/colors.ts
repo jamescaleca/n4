@@ -16,6 +16,7 @@ export type BgColorName =
   | 'green'
   | 'darkBlue'
   | 'dark'
+  | 'darkGreen'
 
 export type GradientName = 'none' | 'ocean' | 'violet' | 'sun'
 export type BadgeColorName = 'gray' | 'pink' | 'green' | 'blue'
@@ -92,6 +93,10 @@ export const bgColors: BgColors = {
     label: 'Transparent',
     value: { color: '#00ffffff', className: 'bg-transparent'}
   },
+  darkGreen: { 
+    label: 'Dark Green',
+    value: { color: 'rgb(20 83 45)', className: 'bg-green-900' }
+  }
 }
 
 export const badgeColors: BadgeColors = {

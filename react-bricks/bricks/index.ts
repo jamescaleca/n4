@@ -7,7 +7,8 @@ import TextImage from './TextImage'
 const bricks: types.Brick<any>[] = [
   HeroUnit, 
   Thumbnail,
-  ...website
+  ...website,
+  TextImage
 ]
 
 export default bricks
