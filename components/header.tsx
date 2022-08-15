@@ -9,7 +9,7 @@ const Header: React.FC = () => (
     className="flex z-[9999] bg-transparent justify-around items-center text-center relative w-full my-5"
   >
     <div className="w-auto relative">
-      <a href="#top">
+      <a href="/">
         <Image
           src="/images/Logo/Black/N4-Enterprises-Black.png"
           alt="N4 Logo"
@@ -26,7 +26,7 @@ const Header: React.FC = () => (
           </Link>
         </li>
         <li className="ml-10">
-          <Link href="/about-us">
+          <Link href="/about">
             <a className="text-white hover:text-blue-400 uppercase">About</a>
           </Link>
         </li>

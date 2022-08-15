@@ -6,12 +6,14 @@ const Footer = () => {
     <footer className="py-8">
       <div className="max-w-6xl mx-auto flex justify-between">
         <div className="flex flex-col items-center justify-between h-28">
-          <Image
-            src="/images/Logo/Black/N4-Enterprises-Black.png"
-            alt="N4 Logo"
-            width={120}
-            height={70}
-          />
+          <a href="/">
+            <Image
+              src="/images/Logo/Black/N4-Enterprises-Black.png"
+              alt="N4 Logo"
+              width={120}
+              height={70}
+            />
+          </a>
           <ul className="flex flex-row justify-between w-36">
             <li>
               <img
@@ -60,7 +62,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="ml-10">
-                <Link href="/about-us">
+                <Link href="/about">
                   <a className="text-white hover:text-blue-400 uppercase">About</a>
                 </Link>
               </li>
