@@ -14,12 +14,12 @@ import Layout from '../components/layout'
 import ErrorNoKeys from '../components/errorNoKeys'
 import ErrorNoHomePage from '../components/errorNoHomePage'
 
-interface HomeProps {
+interface AboutProps {
   page: types.Page
   error: string
 }
 
-const Home: React.FC<HomeProps> = ({ page, error }) => {
+const About: React.FC<AboutProps> = ({ page, error }) => {
   // Clean the received content
   // Removes unknown or not allowed bricks
   const { pageTypes, bricks } = useContext(ReactBricksContext)
@@ -31,7 +31,7 @@ const Home: React.FC<HomeProps> = ({ page, error }) => {
       {pageOk && (
         <>
           <Head>
-            <title>N4 Enterprises | Home</title>
+            <title>N4 Enterprises | About Us</title>
             <meta name="description" content={page.meta.description} />
           </Head>
           <PageViewer page={pageOk} />
@@ -48,11 +48,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return { props: { error: 'NOKEYS' } }
   }
   try {
-    const page = await fetchPage('home', config.apiKey, context.locale)
+    const page = await fetchPage('about', config.apiKey, context.locale)
     return { props: { page } }
   } catch {
     return { props: { error: 'NOPAGE' } }
   }
 }
 
-export default Home
+export default About
