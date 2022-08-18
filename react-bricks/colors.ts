@@ -91,7 +91,7 @@ export const bgColors: BgColors = {
   },
   transparent: {
     label: 'Transparent',
-    value: { color: '#00ffffff', className: 'bg-transparent'}
+    value: { color: '#00ffffff', className: 'bg-transparent dark'}
   },
   darkGreen: { 
     label: 'Dark Green',
